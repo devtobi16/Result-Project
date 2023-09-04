@@ -1,0 +1,183 @@
+/* questions to ask chat gpt
+Can I use flex display mode with rem? :yes
+which is better rem or em? :rem
+can i use rem everywhere in my web page's code? : yes,
+ but sometimes px units are preferred for borders to 
+ maintain consistent thickness regardless of font size 
+ changes.
+how many pixels make 1rem? :16px
+can i give box shadow values rem: No
+where can i just be reading developer's code for fun? 
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  font-family: "Hanken Grotesk", serif;
+}
+/* Rest of your CSS styles */
+
+main {
+  position: relative;
+  margin: 5% auto; /* Set vertical margin to 5% and horizontal margin to auto */
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Rest of your CSS styles */
+
+section {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.875rem;
+  align-items: center;
+  height: 31.25rem;
+  width: 31.25rem;
+  box-shadow: 0 0.9375rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* blue section */
+#blue {
+  background: linear-gradient(hsl(241, 81%, 54%) 100%, hsl(252, 100%, 67%) 0%);
+  align-content: center;
+  justify-content: center;
+}
+
+#yourResult {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 1.5625rem;
+}
+.circle {
+  width: 10.625rem;
+  height: 10.625rem;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1) 100%,
+    hsl(224, 30%, 27%) 0%
+  );
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.currentScore {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 2.5rem;
+}
+.of100 {
+  color: hsl(221, 100%, 96%);
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+.great {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.625rem;
+  font-weight: 800;
+  font-size: 1.625rem;
+}
+.paragraph {
+  font-size: 0.9375rem;
+  font-weight: 31.25rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 0.3125rem;
+}
+
+/* White section */
+#white {
+  background-color: hsl(0, 0%, 100%);
+}
+.summaryText {
+  margin-top: 3.90625rem;
+  margin-right: 13.75rem;
+  font-weight: 800;
+  color: (224, 30%, 27%);
+}
+.scores1 {
+  margin-left: 10.625rem;
+  padding-right: 0.625rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.scores2 {
+  margin-left: 11.25rem;
+  padding-right: 0.625rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+
+#containerRed {
+  background-color: rgba(255, 77, 77, 0.159);
+}
+#containerYellow {
+  background-color: hsla(39, 100%, 56%, 0.151);
+}
+#containerBlue {
+  background-color: hsla(240, 100%, 50%, 0.163);
+}
+#containerGreen {
+  background-color: hsla(166, 100%, 37%, 0.168);
+}
+.containers {
+  height: 2.8125rem;
+  width: 18.75rem;
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  border-radius: 0.5625rem;
+  justify-content: space-between;
+}
+#redResult {
+  color: rgb(197, 53, 53);
+}
+#yellowResult {
+  color: #ffaa33;
+}
+#greenResult {
+  color: #006d5b;
+}
+#blueResult {
+  color: #0047ab;
+}
+.division {
+  color: #f2f3f5f6;
+}
+button {
+  align-items: center;
+  justify-content: center;
+  width: 18.75rem;
+  height: 2.5rem;
+  margin-top: 3.75rem;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 1.875rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(hsl(241, 81%, 54%) 100%, hsl(252, 100%, 67%) 0%);
+}
+
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+@media all and(max-width:500px) {
+}
